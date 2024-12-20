@@ -1,0 +1,15 @@
+
+{
+    "name": "Uniswap",
+    "description": "Lending protocol governance",
+    "contracts": [
+    {
+        "address": "0x408ED6354d4973f66138C91495F2f2FCbd8724C3",
+        "type": "governor",
+        "name": "GovernorBravoDelegator",
+        "deployedAt": 0
+    }
+    ],
+    "chainId": 1
+}
+  
