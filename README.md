@@ -24,28 +24,37 @@ A tool for extracting and analyzing blockchain data from DAOs. This tool retriev
 ```bash
 git clone https://github.com/smeneguz/dao-data-extractor.git
 cd dao-data-extractor
+```
 
 Create and activate a virtual environment:
 
-bashCopypython -m venv venv
+```bash
+python -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
+```
 
 Install requirements:
 
-bashCopypip install -r requirements.txt
+```bash
+pip install -r requirements.txt
+```
 
 Create a .env file with your API keys:
 
-envCopyETHERSCAN_API_KEY=your_etherscan_key_here
+```bash
+ETHERSCAN_API_KEY=your_etherscan_key_here
 ALCHEMY_API_KEY=your_alchemy_key_here
 OUTPUT_DIR=data
 CACHE_DIR=.cache
 NETWORK=mainnet
-Usage
+```
+
+## Usage
 
 Configure your DAO in config.json:
 
-jsonCopy{
+```bash
+{
     "name": "YourDAO",
     "description": "Description of the DAO",
     "contracts": [
@@ -58,10 +67,12 @@ jsonCopy{
     ],
     "chainId": 1
 }
+```
 
 Run the extractor:
 
-bashCopypython main.py
+```bash
+python main.py
 The tool will create a structured output in your specified data directory:
 Copydata/
 └── YourDAO/
@@ -81,5 +92,7 @@ Copydao-data-extractor/
 ├── .env              # Environment variables
 ├── config.json       # DAO configuration
 └── main.py          # Entry point
-Contributing
+```
+
+## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
